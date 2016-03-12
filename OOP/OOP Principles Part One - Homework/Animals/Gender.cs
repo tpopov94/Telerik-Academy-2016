@@ -1,0 +1,9 @@
+﻿namespace Animals
+{
+    public enum Gender
+    {
+        Male,
+        Female,
+        Something
+    }
+}
