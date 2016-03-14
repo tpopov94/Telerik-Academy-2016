@@ -1,9 +1,9 @@
 function theBiggestOfThreeNumbers(){
     'use strict';
 
-    var firstNumber = +document.getElementById('inputOne').value,
-        secondNumber = +document.getElementById('inputTwo').value,
-        thirdNumber = +document.getElementById('inputThree').value;
+    var firstNumber = +document.getElementById('inputFormOne').value,
+        secondNumber = +document.getElementById('inputFormTwo').value,
+        thirdNumber = +document.getElementById('inputFormThree').value;
 
     // Input check if all values are numbers
 

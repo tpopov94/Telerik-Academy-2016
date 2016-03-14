@@ -17,12 +17,12 @@ label, input {
 #console {
     background-color: black;
     color: white;
-    border: 5px; solid-color: white;
+    border: 5px solid-color: white;
     padding: 10px;
     margin: 5px;
 }
 
-#inputForm {
+#inputForm, #inputFormOne, #inputFormTwo, #inputFormThree {
     background: white;
     border: 1px solid #ffa853;
     border-radius: 5px;
