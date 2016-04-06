@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+</head>
+<body>
+    <form>
+        <table border="1" style="border-collapse:collapse">
+            <tr>
+                <td style="text-align:center; width:150px; height:20px">
+                    <label for="lastName"><b>Last Name</b></label>
+                </td>
+                <td colspan="3">
+                    <input type="text" id="lastName" required="required" style="display: inline-block; width:330px" />
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align:center; width:150px; height:20px">
+                    <label for="firstName"><b>First Name</b></label>
+                </td>
+                <td colspan="3">
+                    <input type="text" id="firstName" style="width:330px" />
+                </td>
+            </tr>
+
+            <tr>
+                <td style=" text-align:center; width:150px; height:70px;">
+                    <label for="address"><b>Address</b></label>
+                </td>
+                <td colspan="3">
+                    <textarea name="Address" id="address" style="width:330px; height:70px;"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align:center">
+                    <b>City</b>
+                </td>
+                <td>
+                    <input type="text" style="display: inline-block; width:250px" />
+                    <b>State</b>
+                    <input type="text" style="display: inline-block; width:40px" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="zipCode" "><b>Zip/Postal Code</b></label>
+                </td>
+                <td>
+                    <input type="text" style="width:100px" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <b>Country</b>
+                </td>
+                <td>
+                    <select name="gender" style="width:210px">
+                        <option value="Value 1"selected="selected">Bulgaria</option>
+                        <option value="Value 2">Australia</option>
+                        <option value="Value 3">Belgium</option>
+                        <option value="Value 4">Bosnia &amp; Herzegovina</option>
+                        <option value="Value 5">Faroe</option>
+                        <option value="Value 6">Finland</option>
+                        <option value="Value 7">France</option>
+                        <option value="Value 8">Germany</option>
+                        <option value="Value 9">Hawaii</option>
+                        <option value="Value 10">Italy</option>
+                        <option value="Value 11">Latvia</option>
+                        <option value="Value 12">Luxembourg</option>
+                        <option value="Value 13">Maldives</option>
+                        <option value="Value 14">Norway</option>
+                        <option value="Value 15">Papua New Guinea</option>
+                        <option value="Value 16">Spain</option>
+                        <option value="Value 17">United States of America</option>
+                    </select>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="phone">
+                        <b>
+                            Phone(country code,<br />
+                            area code, number)
+                        </b>
+                    </label>
+                </td>
+                <td>
+                    (+<input style="display: inline-block; width: 70px;" id="phone" type="number" required="required" />)
+                    <input style="display: inline-block; width: 70px;" id="area-code" type="number" required="required" />
+                    <input style="display: inline-block; width: 140px;" id="number" type="number" required="required" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="email"><b>E-mail</b></label>
+                </td>
+                <td colspan="3">
+                    <input type="text" id="email" required="required" style="display: inline-block; width:330px" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="birth"><b>Birth date</b></label>
+                </td>
+                <td>
+                    <input type="text" placeholder="дд.мм.гггг г." style="display: inline-block; width:190px" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="gender"><b>Gender</b></label>
+                </td>
+                <td>
+                    <select id="gender">
+                        <option value="Value 1"
+                                selected="selected">
+                            Male
+                        </option>
+                        <option value="Value 2">Female</option>
+                        <option value="Value 3">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="startingDate"><b>Starting date</b></label>
+                </td>
+                <td>
+                    <input type="radio" name="season"/> Spring 2015
+                    <input type="radio" name="season" /> Summer 2015
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="comments"><b>Comments/Questions</b></label>
+                </td>
+                <td>
+                    <textarea rows="7" cols="40"></textarea>
+                </td>
+            </tr>
+
+            <tr bgcolor="#87cdec">
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Clean This Form" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

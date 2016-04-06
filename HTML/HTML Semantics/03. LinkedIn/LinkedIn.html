@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" lang="en-gb" />
+    <title>LinkedIn</title>
+</head>
+<body>
+    <header>
+        <h1><a href="#">LinkedIn</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">What is LinkedIn?</a></li>
+                <li><a href="#">Join Today</a></li>
+                <li>
+                    <fieldset style="border-color:ghostwhite">
+                        <legend><b>Sign In</b></legend>
+                        <form></form>
+                        <ul type="circle">
+                            <li><label><b> Email: </b></label><input type="text" title="Email" /></li>
+                            <li><label><b> Password </b></label> <input type="password" title="password" /></li>
+                            <li><button type="submit">Sign In</button></li>
+                        </ul>
+                    </fieldset>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr />
+
+    <section>
+        <h1>Over 175 million professionals use LinkedIn to exchange information, ideas and oputunities</h1>
+        <ul>
+            <li>Stay informed about your contacts and industry</li>
+            <li>Find the people &amp; knowledge you need to achieve your goals</li>
+            <li>Control your professional identuty online</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Join LinkedIn Today</h2>
+        <form>
+            <fieldset style="border-color:ghostwhite">
+                <legend>Sign Up</legend>
+                <ul>
+                    <li>
+                        <label for="firstName">First Name: </label> <br />
+                        <input type="text" id="firstName" placeholder="Enter your first name" />
+                    </li>
+                    <li>
+                        <label for="lastName">Last Name: </label> <br />
+                        <input type="text" id="lastName" placeholder="Enter your last name" />
+                    </li>
+                    <li>
+                        <label for="email">Email:</label> <br />
+                        <input type="email" id="email" placeholder="Email Address" />
+                    </li>
+                    <li>
+                        <label for="password">Password:</label> <br />
+                        <input type="password" id="password" pattern=".{6,}" required title="6 characters minimum" />
+                    </li>
+                </ul>
+                <input type="submit" value="Join Now" />
+                <p> Already on LinkedIN? <a href="#">Sign in</a></p>
+            </fieldset>
+        </form>
+    </section>
+
+    <section>
+        <h3>Search for someone by name: </h3>
+        <ul>
+            <li>
+                <label for="firstName">First Name </label>
+                <input type="text" id="firstName" placeholder="First Name"/>
+            </li>
+            <li>
+                <label for="lastName">First Name </label>
+                <input type="text" id="lastName" placeholder="Last Name" />
+            </li>
+        </ul>
+        <button>Go</button>
+    </section>
+</body>
+</html>
