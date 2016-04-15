@@ -9,37 +9,23 @@ namespace _05.Calculate
     {
         static void Main()
         {
-            decimal result = 1;
             int n = int.Parse(Console.ReadLine());
-            decimal x = decimal.Parse(Console.ReadLine());
+            double x = double.Parse(Console.ReadLine());
+            double result = 0;
+            double factorial = 1;
+            double power = 1;
 
             for (int i = 1; i <= n; i++)
             {
-                result += Factorial(i) / Power(x, i);
-            }
-
-            Console.WriteLine("{0:F5}", result);
-        }
-
-        public static decimal Factorial(decimal number)
-        {
-            decimal factorial = 1;
-
-            for (int i = 1; i <= number; i++)
-            {
                 factorial *= i;
-            }
-            return factorial;
-        }
-        public static decimal Power(decimal number, int power)
-        {
-            decimal result = 1;
+                power = Math.Pow(x, i);
 
-            for (int i = 1; i <= power; i++)
-            {
-                result *= number;
+                result += factorial / power;
             }
-            return result;
+
+            Console.WriteLine("{0:F5}", result + 1);
         }
     }
 }
+
+
