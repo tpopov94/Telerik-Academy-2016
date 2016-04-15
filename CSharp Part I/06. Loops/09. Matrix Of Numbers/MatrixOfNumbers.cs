@@ -18,7 +18,7 @@ namespace _09.Matrix_Of_Numbers
             {
                 for (int j = i; j <= limit; j++)
                 {
-                    Console.Write(j);
+                    Console.Write("{0} ",j);
                 }
                 Console.WriteLine();
                 limit++;

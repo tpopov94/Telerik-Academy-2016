@@ -28,9 +28,9 @@
                 }
             }
 
-            Console.WriteLine("min={0}", min);
-            Console.WriteLine("max={0}", max);
-            Console.WriteLine("sum={0}", sum);
+            Console.WriteLine("min={0:F2}", min);
+            Console.WriteLine("max={0:F2}", max);
+            Console.WriteLine("sum={0:F2}", sum);
             Console.WriteLine("avg={0:F2}", sum / n);
         }
     }

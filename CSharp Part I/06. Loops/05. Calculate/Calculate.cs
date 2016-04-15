@@ -9,9 +9,9 @@ namespace _05.Calculate
     {
         static void Main()
         {
-            double result = 1;
+            decimal result = 1;
             int n = int.Parse(Console.ReadLine());
-            double x = double.Parse(Console.ReadLine());
+            decimal x = decimal.Parse(Console.ReadLine());
 
             for (int i = 1; i <= n; i++)
             {
@@ -21,9 +21,9 @@ namespace _05.Calculate
             Console.WriteLine("{0:F5}", result);
         }
 
-        public static double Factorial(double number)
+        public static decimal Factorial(decimal number)
         {
-            double factorial = 1;
+            decimal factorial = 1;
 
             for (int i = 1; i <= number; i++)
             {
@@ -31,9 +31,9 @@ namespace _05.Calculate
             }
             return factorial;
         }
-        public static double Power(double number, int power)
+        public static decimal Power(decimal number, int power)
         {
-            double result = 1;
+            decimal result = 1;
 
             for (int i = 1; i <= power; i++)
             {
