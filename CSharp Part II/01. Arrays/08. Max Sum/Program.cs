@@ -4,42 +4,46 @@ namespace _08.Max_Sum
 {
     using System;
 
-    public class Program
+    public class Maximalsum
     {
-        static void Main()
+        public static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
-            var arrayOfNumbers = new int[n];
-            long maxSum = arrayOfNumbers[0];
-            long currentSum = arrayOfNumbers[0];
+            int length = int.Parse(Console.ReadLine());
+            int[] arr = new int[length];
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < length; i++)
             {
-                arrayOfNumbers[i] = int.Parse(Console.ReadLine());
+                arr[i] = int.Parse(Console.ReadLine());
             }
 
-            for (int i = 1; i < arrayOfNumbers.Length; i++)
+            int maxSum = int.MinValue;
+            int currentSum = 0;
+            int tmpStart = 0;
+            int end = length;
+            int start = 0;
+
+            for (int j = 0; j != length; ++j)
             {
-                if (arrayOfNumbers[i] == 0)
+                currentSum += arr[j];
+                end = j;
+
+                // if the sum is equal, choose the one with more elements
+                if (currentSum > maxSum || (currentSum == maxSum && (end - start) < (j - tmpStart)))
                 {
-                    continue;
+                    maxSum = currentSum;
+                    start = tmpStart;
+                    end = j;
                 }
-                if ((currentSum + arrayOfNumbers[i] > currentSum) || (arrayOfNumbers[i - 1] >= arrayOfNumbers[i]))
+
+                if (currentSum < 0)
                 {
-                    currentSum += arrayOfNumbers[i];
-                    if (currentSum > maxSum)
-                    {
-                        maxSum = currentSum;
-                    }
-                }
-                else
-                {
-                    i++;
-                    currentSum = arrayOfNumbers[i];
+                    currentSum = 0;
+                    tmpStart = j + 1;
                 }
             }
 
             Console.WriteLine(maxSum);
         }
+
     }
 }
