@@ -1,5 +1,4 @@
-﻿// Write a program that finds the length of the maximal increasing sequence in an array of N integers.
-namespace _05.Maximal_Increasing_Sequence
+﻿namespace _05.Maximal_Increasing_Sequence
 {
     using System;
 
@@ -8,34 +7,39 @@ namespace _05.Maximal_Increasing_Sequence
         static void Main()
         {
             int n = int.Parse(Console.ReadLine());
-            int bestSequence = 0;
-            int curBest = 1;
-            /*int[] arrayOfNumbers = new int[n];
-
+            int[] arrayOfNumbers = new int[n];
             for (int i = 0; i < n; i++)
             {
                 arrayOfNumbers[i] = int.Parse(Console.ReadLine());
             }
-            */
-            int[] arrayOfNumbers = { 7, 1, 2, 3, 4, 5, 6, 4, 2, 1 };
 
-            for (int i = 0; i < n-1; i++)
+            int bestSequnece = 1;
+            int curBest = 1;
+            int firstElement = arrayOfNumbers[0];
+
+            for (int i = 1; i < n; i++)
             {
-                if (arrayOfNumbers[i] < arrayOfNumbers[i+1])
+                if (arrayOfNumbers[i] > firstElement)
                 {
                     curBest++;
                 }
                 else
                 {
-                    if (curBest > bestSequence)
+                    if (curBest > bestSequnece)
                     {
-                        bestSequence = curBest;
+                        bestSequnece = curBest;
                     }
                     curBest = 1;
+                    firstElement = arrayOfNumbers[i];
                 }
             }
 
-            Console.WriteLine(bestSequence);
+            if (curBest > bestSequnece)
+            {
+                bestSequnece = curBest;
+            }
+
+            Console.WriteLine(bestSequnece);
         }
     }
 }
