@@ -1,2 +1,2 @@
-# Telerik-Academy-2016
-Telerik Academy 2016 Software Courses
+## Telerik-Academy-2016
+#Telerik Academy 2016 Software Courses
