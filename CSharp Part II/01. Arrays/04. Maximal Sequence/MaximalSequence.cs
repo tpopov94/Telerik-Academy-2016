@@ -8,7 +8,7 @@ namespace _04.Maximal_Sequence
         static void Main()
         {
             int n = int.Parse(Console.ReadLine());
-            int bestSequence = 0;
+            int bestSequence = 1;
             int curBest = 1;
             int[] arrayOfNumbers = new int[n];
 
