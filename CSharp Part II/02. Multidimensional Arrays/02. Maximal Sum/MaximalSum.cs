@@ -10,8 +10,8 @@
             string input = Console.ReadLine();
             int[] rowsAndColsArray = input.Split(' ').Select(n => int.Parse(n)).ToArray();
             int rows = rowsAndColsArray[0];
-            int cols = rowsAndColsArray[0];
-        
+            int cols = rowsAndColsArray[1];
+
             int[,] numbersArray = new int[rows, cols];
 
             //Initiating Array
@@ -27,14 +27,14 @@
 
             // Task Solution
 
-            long maxSum = 0;
+            int maxSum = 0;
 
             for (int row = 0; row < rows - 2; row++)
             {
                 for (int col = 0; col < cols - 2; col++)
                 {
-                    long currentSum = 0;
-                    currentSum += numbersArray[row, col] + numbersArray[row, col + 1] + numbersArray[row, col + 2]
+                    int currentSum = 0;
+                    currentSum = numbersArray[row, col] + numbersArray[row, col + 1] + numbersArray[row, col + 2]
                         + numbersArray[row + 1, col] + numbersArray[row + 1, col + 1] + numbersArray[row + 1, col + 2]
                         + numbersArray[row + 2, col] + numbersArray[row + 2, col + 1] + numbersArray[row + 2, col + 2];
 
