@@ -21,7 +21,6 @@ namespace _02.Get_Largest_Number
             {
                 maxNumber = secondNumber;
             }
-
             return maxNumber;
         }
     }
