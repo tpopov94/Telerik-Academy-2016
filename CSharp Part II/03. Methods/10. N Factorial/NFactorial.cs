@@ -1,6 +1,7 @@
 ﻿namespace _10.N_Factorial
 {
     using System;
+    using System.Numerics;
 
     public class NFactorial
     {
@@ -11,9 +12,9 @@
             Console.WriteLine(Factorial(number));
         }
 
-        static decimal Factorial(int number)
+        static BigInteger Factorial(int number)
         {
-            decimal result = 1;
+            BigInteger result = 1;
 
             for (int i = 1; i <= number; i++)
             {
