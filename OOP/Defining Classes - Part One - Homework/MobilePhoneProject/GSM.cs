@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    class GSM
+    public class GSM
     {
         public static GSM iPhone4S = new GSM("I6", "Apple", 500, "Some Guy", new Battery("some", 15, 200, BatteryType.NiMH), new Display(5, 200));
 

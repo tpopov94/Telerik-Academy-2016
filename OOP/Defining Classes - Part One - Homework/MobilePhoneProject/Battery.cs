@@ -2,12 +2,12 @@
 {
     using System;
 
-    class Battery
+    public class Battery
     {
         private string batteryModel; // Task 1
         private int hoursIdle; // Task 1
         private int hoursTalk; // Task 1
-        private BatteryType batteryType;// Tash 3
+        private BatteryType batteryType;// Task 3
 
         //Parametless Constructor 
         public Battery() // Task 2

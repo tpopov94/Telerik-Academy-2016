@@ -3,9 +3,8 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-
-
-    class GSMCallHistoryTest  // Task 12
+    
+    public class GSMCallHistoryTest  // Task 12
     {
         public static GSM testGSM = new GSM();
 

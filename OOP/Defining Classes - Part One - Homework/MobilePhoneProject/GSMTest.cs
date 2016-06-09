@@ -2,13 +2,12 @@
 {
     using System;
 
-    class GSMTest
+    public class GSMTest
     {
         static string[] manufacturers = new string[] { "Samsung", "Sony", "Nokia", "Sagem", "Telefoni Aparati" };
         static string[] model = new string[] { "Galaxy", "Petrohan", "Balkan", "Vitoshka", "Super Lubo" };
         static decimal[] priceRange = new decimal[] { 1000m, 900m, 300m, 400m, 20m };
         static string[] owner = new string[] { "Petko", "Stamat", "Dinko", "Bat Georgi", "Kuci" };
-
 
         public static GSM[] GenerateGSMs()
         {

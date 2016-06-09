@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace MobilePhoneProject
+﻿namespace MobilePhoneProject
 {
-    class Call  // Task 8
+    using System;
+
+    public class Call  // Task 8
     {
         private DateTime date;
         private string phoneNumber;
