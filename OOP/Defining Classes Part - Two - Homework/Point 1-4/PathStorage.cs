@@ -1,7 +1,7 @@
-﻿using System.IO;
-
-namespace Point_1_4
+﻿namespace Point_1_4
 {
+    using System.IO;
+
     public static class PathStorage // Task 4
     {
         public static void SavePath(Path path, string pathIdentifier) //saves the file in the main project directory

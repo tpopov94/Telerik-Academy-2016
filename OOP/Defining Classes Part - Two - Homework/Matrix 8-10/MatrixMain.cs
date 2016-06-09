@@ -2,7 +2,7 @@
 {
     using System;
 
-    class MatrixMain
+    public class MatrixMain
     {
         static void Main()
         {

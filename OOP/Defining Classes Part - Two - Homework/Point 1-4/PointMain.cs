@@ -2,7 +2,6 @@
 {
     using System;
 
-
     class PointMain
     {
         static void Main()

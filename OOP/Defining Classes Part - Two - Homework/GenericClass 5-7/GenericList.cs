@@ -2,7 +2,6 @@
 {
     using System;
 
-
     public class GenericList<T> where T: IComparable<T>// Tasks 5 - 7
     {
         private const int InitialCapacity = 5;

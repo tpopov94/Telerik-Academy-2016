@@ -1,8 +1,8 @@
-﻿using System;
-using System.Text;
-
-namespace Matrix_8_10
+﻿namespace Matrix_8_10
 {
+    using System;
+    using System.Text;
+
     public class Matrix<T> where T : IComparable<T>
     {
         private T[,] matrix;

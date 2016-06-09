@@ -2,7 +2,6 @@
 {
     using System.Collections.Generic;
 
-
     public class Path // Task 4
     {
         private List<Point> pointList;

@@ -3,7 +3,6 @@
     using System;
     using System.Text;
 
-
     public class Point
     {
         private static readonly Point zeroPoint; // Task 2
