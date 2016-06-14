@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body div#wrapper {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+body div#wrapper img {
+  border: 2px outset #808080;
+}
+body div#wrapper div#visualizer img {
+  width: 50%;
+  margin: 0 auto;
+  display: none;
+}
+body div#wrapper div#visualizer img:target {
+  display: block;
+}
+body div#wrapper div#static {
+  margin: 20px;
+}
+body div#wrapper div#static a {
+  margin: 0px 10px;
+}
+body div#wrapper div#static a img {
+  width: 20%;
+}

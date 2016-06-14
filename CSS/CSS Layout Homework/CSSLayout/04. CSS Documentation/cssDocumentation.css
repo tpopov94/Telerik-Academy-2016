@@ -1,0 +1,147 @@
+﻿body {
+    background-color: #F1F1F1;
+    border: 1px solid black;
+    font-family: Arial;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, a, nav, section, aside, article, img, footer {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    float: left;
+    width: 18%;
+    padding-left: 5px;
+}
+
+    nav img {
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+    ul li:first-child {
+        color: #9F2E2C;
+        font-weight: 600;
+    }
+
+a {
+    color: #9F2E2C;
+}
+
+section {
+    float: left;
+    width: 60%;
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+article h3 {
+    background-color: #808080;
+    color: white;
+    padding-left: 5px;
+}
+
+h3 {
+    background-color: #808080;
+    color: white;
+}
+
+#tutorialArticle {
+    text-align: left;
+    text-align: justify;
+    font-weight: 600;
+}
+
+    #tutorialArticle img {
+        float: left;
+        height: 90px;
+    }
+
+    #tutorialArticle p {
+        margin-left: 120px;
+    }
+
+section button {
+    background-color:white;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.leftArrow{
+    margin-right: 20px;
+}
+
+.rightArrow {
+    margin-left: 30px;
+}
+
+footer {
+    padding-bottom: 200px;
+}
+
+aside {
+    /*display: inline-block;
+    position: absolute;
+    /*float:right;*/
+    /*width: 18%;
+    margin-left:5px;
+    border: 1px solid black;*/
+    float: left;
+    width: 18%;
+    text-align: center;
+}
+
+    aside div {
+        background-color: white;
+        border: 1px solid black;
+        margin: 2px;
+        padding: 5px;
+    }
+
+        aside div h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+
+        aside div a {
+            display: block;
+        }
+
+    aside img {
+        display: block;
+        margin: 0 auto;
+    }
+
+.clearfix {
+    zoom: 1;
+}
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }

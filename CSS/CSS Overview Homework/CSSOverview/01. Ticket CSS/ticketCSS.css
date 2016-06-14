@@ -1,0 +1,61 @@
+﻿table{
+    background-color:#595959;
+    width:400px;
+    border:0;
+    color:#A7AFAA;
+    margin-left:40%;
+}
+
+th{
+    text-align:left;
+}
+
+p{
+    margin:0;
+}
+
+p#dot:before{
+    content:"•";
+    font-size:40px;;
+    line-height:16px;
+    vertical-align:top;
+    color:#72B77B;
+}
+
+td{
+    padding-bottom:10px;
+}
+
+.rowNames{
+    color:white;
+    font-style:italic;
+    vertical-align:top;
+}
+
+.yellow
+{
+    color:#EDD58B;
+}
+
+#red{
+    color:red;
+}
+
+#orange{
+    color:#E36A24;
+}
+body {
+    background-color:#42cf8e;
+    font-family:'Trebuchet MS';
+}
+
+h1{
+    text-align:center;
+    font-size:25px;
+    font-family:'Century Gothic';
+}
+
+footer{
+    font-family:'Century Gothic';
+    text-align:center;
+}

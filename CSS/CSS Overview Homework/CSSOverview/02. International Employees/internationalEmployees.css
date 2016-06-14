@@ -1,0 +1,39 @@
+﻿body {
+    font-family: Calibri;
+    text-align: left;
+    font-size:15px;
+}
+
+table {
+    border-bottom: 1px solid#c3bfb6;
+    border-collapse: collapse;
+    width: 650px;
+    border-spacing: 0;
+}
+
+th {
+    background-color: #54B706;
+    color: white;
+    font-weight: 100;
+    border-left: 1px solid #c3bfb6;
+    border-bottom: 1px solid #c3bfb6;
+    padding: 5px 8px;
+}
+
+td {
+    border-left: 1px solid #c3bfb6;
+    padding: 5px 8px;
+}
+
+tr:nth-child(2n) {
+    background-color: #ECECD8;
+}
+
+input[type='checkbox'] {
+    background-color: #d4d0c8;
+}
+
+img {
+    width: 25px;
+    height: 15px;
+}

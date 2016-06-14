@@ -1,0 +1,62 @@
+﻿body {
+    font-size: 13px;
+    font-family: 'Segoe UI';
+}
+
+h2 {
+    margin: 10px;
+    font-weight: 300;
+}
+
+section {
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    width: 450px;
+    margin-left: 30%;
+}
+
+article {
+    height: 120px;
+    margin: 30px 15px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+img {
+    padding: 15px;
+}
+
+.listen {
+    border: 1px solid black;
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: -40px;
+    background-image: url("images/button.png");
+}
+
+.add {
+    border: 1px solid black;
+    text-align: center;
+    width: 60px;
+    height: 25px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    position: relative;
+    top: -40px;
+    background-image: url("images/button.png");
+}
+
+p {
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    right: 55px;
+    float: right;
+}

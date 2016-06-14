@@ -1,0 +1,99 @@
+﻿body, header {
+    margin: 0;
+    padding: 0;
+    background-color: #3B3B3B;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 0;
+    border-radius: 10px;
+    font-family: serif;
+    font-size:18px;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+    background: rgb(59,59,59); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(59,59,59,1) 0%, rgba(59,59,61,1) 42%, rgba(56,56,56,1) 58%, rgba(58,58,58,1) 61%, rgba(57,57,57,1) 72%, rgba(52,52,52,1) 86%, rgba(53,53,53,1) 92%, rgba(45,45,45,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,59,59,1)), color-stop(42%,rgba(59,59,61,1)), color-stop(58%,rgba(56,56,56,1)), color-stop(61%,rgba(58,58,58,1)), color-stop(72%,rgba(57,57,57,1)), color-stop(86%,rgba(52,52,52,1)), color-stop(92%,rgba(53,53,53,1)), color-stop(100%,rgba(45,45,45,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(59,59,59,1) 0%,rgba(59,59,61,1) 42%,rgba(56,56,56,1) 58%,rgba(58,58,58,1) 61%,rgba(57,57,57,1) 72%,rgba(52,52,52,1) 86%,rgba(53,53,53,1) 92%,rgba(45,45,45,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(59,59,59,1) 0%,rgba(59,59,61,1) 42%,rgba(56,56,56,1) 58%,rgba(58,58,58,1) 61%,rgba(57,57,57,1) 72%,rgba(52,52,52,1) 86%,rgba(53,53,53,1) 92%,rgba(45,45,45,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(59,59,59,1) 0%,rgba(59,59,61,1) 42%,rgba(56,56,56,1) 58%,rgba(58,58,58,1) 61%,rgba(57,57,57,1) 72%,rgba(52,52,52,1) 86%,rgba(53,53,53,1) 92%,rgba(45,45,45,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(59,59,59,1) 0%,rgba(59,59,61,1) 42%,rgba(56,56,56,1) 58%,rgba(58,58,58,1) 61%,rgba(57,57,57,1) 72%,rgba(52,52,52,1) 86%,rgba(53,53,53,1) 92%,rgba(45,45,45,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3b3b', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
+}
+
+    header img {
+        display: inline-block;
+        padding: 10px;
+        float: left;
+    }
+
+    header h1{
+        position: relative;
+        top: 5px;
+    }
+
+h1 {
+    color: white;
+    display: inline-block;
+    font-weight: 100;
+    font-size:25px;
+}
+
+section {
+    background-color: #3B3B3B;
+    width: 97%;
+    padding-left: 20px;
+}
+
+    section h1 {
+        color: #FFD221;
+        font-size:30px;
+    }
+
+    section a {
+        text-decoration: none;
+        color: #A4A4A4;
+    }
+
+span {
+    color: white;
+}
+
+p {
+    color: #A4A4A4;
+    margin: 5px;
+    font-family: Calibri;
+}
+
+input[type=text] {
+    margin-left: 15px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    padding-left:15px;
+}
+
+input[type=email] {
+    margin-left: 25px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    padding-left:15px;
+}
+
+.goButton {
+    background: no-repeat url('images/goButton.png');
+    background-position: -5px -12px;
+    background-size: 65px 50px;
+    width: 56px;
+    height: 30px;;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 20px;
+    top: 17px;
+    border-radius: 12px;
+    border: 1px solid white;
+}

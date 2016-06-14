@@ -1,0 +1,170 @@
+@import 'stylus/mixins.styl'
+
+body
+	background-linear-gradient(top, #D292FD, 0%, #9215F2, 20%)
+	background-repeat no-repeat
+	color #FFF
+	font 14px normal "Arial"
+	header
+		padding 10px
+	a
+		color #FFF
+		text-decoration none
+
+////
+//HEADER AND NAV	
+////
+
+body header div#header-container
+	div#logo-container
+		float left
+		position relative
+	div#reg-form-container
+		float right
+		position relative
+		right 5%
+		div
+			text-align right
+			label
+				width 50px
+				margin 5px
+			input
+				width 130px
+				border 1px solid #603382
+				border-radius 10px
+				padding 2px 5px
+				margin 5px
+				background-color #B25DF2
+		button
+			color #FFF
+			font-weight bold				
+			border 1px outset #603382
+			border-radius 10px
+			padding 5px 8px
+			background-color #B25DF2	
+
+body header div#header-container:after, body header nav:after, 
+body header nav ul:after, body section:after, body aside:after
+	content ""		
+	display block
+	clear both
+	
+body header div#header-container:before, body header nav:before, 
+body header nav ul:before, body section:before, body aside:before
+	content ""
+	display block
+	clear both
+
+body header nav
+	width 75%
+	margin 10px 20px
+	padding 5px 10px
+	border 2px solid #000
+	border-radius 15px
+	
+body header nav ul#main-nav-list
+	list-style-type none
+	ul.sub-nav-list
+		display none
+		position absolute
+		background-color rgba(179, 94, 243, 0.9)
+		border-radius 5px
+	li
+		display inline-block
+		padding 0 10px
+		font-size 1.4em
+	li:hover ul.sub-nav-list
+		display block
+		li
+			display block
+			float none
+			margin 0 15px
+			padding 10px 0
+			border-bottom 1px solid #000
+		li:last-of-type
+			border-bottom none
+		
+////
+//END OF HEADER AND NAV
+////
+//SECTION AND ARTICLES
+////
+
+body section
+	width 75%
+	float left
+	color #FFF
+	
+	article
+		margin 10px 20px
+		padding 10px 20px
+		border 1px solid black
+		border-radius 20px
+		header
+			padding 5px
+			h1
+				font-size 1.4em
+				margin-bottom 0px
+				padding 0
+		footer
+			margin 0px
+			padding 0 5px
+			p
+				font-size 16px
+				text-align right
+				font-weight normal
+				a
+					color: #BB67F5
+				
+////
+//END OF SECTION AND ARTICLES
+////
+//ASIDE AND FOOTER
+////
+
+body aside
+	float left
+	width 20%
+	margin 20px
+	ul
+		list-style-type none
+		li
+			margin 15px 0
+			padding 15px
+			border 1px solid black
+			border-radius 10px
+			h2
+				font-size 1.2em
+				font-weight bold
+			p
+				margin 10px 5px
+				a
+					color #BB67F5
+				strong
+					font-weight bold
+					color #CCC
+				em
+					font-style italic
+					color #CCC
+		ul
+			margin-top -10px
+			margin-left -25px
+			margin-bottom 10px
+			li
+				margin 0
+				background url(../images/li-dot.png) no-repeat
+				background-position 0 80%
+				padding-left 25px
+				padding-top 0
+				padding-bottom 0
+				border 0
+
+
+body footer
+	clear both
+	padding 0
+	text-align center
+	p
+		font-size 1.2em
+		font-weight bold	
+
