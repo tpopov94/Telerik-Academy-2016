@@ -17,7 +17,8 @@
             this.FirstName = firstName;
             this.LastName = lastName;
             this.coursesList = new List<Course>();
-            this.uniqueNumber = School.UniqueNumber++;
+            this.uniqueNumber = ++School.UniqueNumber;
+            //this.UniqueNumber = uniqueNumber;
         }
 
         public string FirstName

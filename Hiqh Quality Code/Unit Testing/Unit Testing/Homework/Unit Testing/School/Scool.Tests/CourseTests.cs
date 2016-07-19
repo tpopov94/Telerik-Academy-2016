@@ -9,6 +9,7 @@
     public class CourseTests
     {
         private Course sampleCourse = new Course("Unit Testing");
+        private Student sampleStudent = new Student("Kircho", "Ronaldov");
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
@@ -46,6 +47,33 @@
             var ragnarStudent = new Student("Ragnar", "Peshovski");
             sampleCourse.AddStudent(ragnarStudent);
             sampleCourse.AddStudent(ragnarStudent);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void AddingMoreThanTwentyNineStudentsShoudCauseArgumentOutOfRangeException()
+        {
+            var newCourse = new Course("C# for dummys");
+            for (int i = 0; i < 30; i++)
+            {
+                var student = new Student("Pesho" + i, "Peshev");
+                newCourse.AddStudent(student);
+            }
+        }
+
+        [TestMethod]
+        public void RemovingStudentsFromCourseShouldUpdateStudentsListCountProperly()
+        {
+            var newCourse = new Course("C# for dummys");
+            for (int i = 0; i < 9; i++)
+            {
+                var student = new Student("Kircho" + i, "Ronaldov");
+                newCourse.AddStudent(student);
+            }
+            newCourse.AddStudent(sampleStudent);
+            newCourse.RemoveStudent(sampleStudent);
+
+            Assert.AreEqual(9, newCourse.StudentsList.Count, "StudentsList counter is not updated properly after removing a student");
         }
     }
 }

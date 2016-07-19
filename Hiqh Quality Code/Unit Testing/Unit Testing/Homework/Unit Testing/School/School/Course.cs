@@ -33,11 +33,24 @@
             }
         }
 
+        public ICollection<Student> StudentsList
+        {
+            get
+            {
+                return this.studentsList;
+            }
+        }
+
         public void AddStudent(Student student)
         {
             if (student == null)
             {
                 throw new ArgumentNullException("Student cannot be null");
+            }
+
+            if (this.StudentsList.Count >= 29)
+            {
+                throw new ArgumentOutOfRangeException("Students list cannot contain more than 29 students");
             }
 
             if (this.studentsList.Count < 29)
