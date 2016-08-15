@@ -11,4 +11,4 @@
 | June |           JavaScript Fundamentals           |          [JS Fundamentals](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/JavaScript%20Fundamentals)|
 |   July  |               C# Unit Testing               |     [Unit Testing](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/Hiqh%20Quality%20Code/Unit%20Testing)          |
 |   July  |               JavaScript UI & DOM               |          [JS UI & DOM](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/JavaScript%20UI%20%26%20DOM)         |
-|   August  |               High Quality Code Part I               |     |
+|   August  |               High Quality Code Part I               |  [HQC Part I](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/Hiqh%20Quality%20Code/High%20Quality%20Code%20Part%20I)    |
