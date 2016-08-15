@@ -4,7 +4,7 @@
 |       Date    | Course |              Repository              |
 |:---------------:|:----------------------------------:|:-----------------------------------------------------:|
 | April |           C# Fundamentals          | [CSharp Part 1](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/CSharp%20Part%20I) |
-|  April |            HTML           |       [HTML](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/CSharp%20Part%20I |
+|  April |            HTML           |       [HTML](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/CSharp%20Part%20I) |
 |  May |              C# Advanced              |     [CSharp Part 2](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/CSharp%20Part%20II)  |
 | May |           CSS         |                [CSS](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/CSS)                                       |
 |  June  |  Object-oriented Programming             |   [OOP](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/OOP)    |
