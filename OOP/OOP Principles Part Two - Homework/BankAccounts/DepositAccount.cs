@@ -4,18 +4,11 @@
 
     public class DepositAccount : Account, IDepositable, IWithdrawable
     {
-        // Constructors
-
         public DepositAccount(Customer customer, decimal bankBalance, decimal interestRate)
             : base(customer, bankBalance, interestRate)
         {
 
         }
-
-        // Properties
-
-        // Methods
-
 
         public override decimal InterestAmount(int months)
         {
@@ -52,6 +45,5 @@
         {
             return base.ToString();
         }
-
     }
 }

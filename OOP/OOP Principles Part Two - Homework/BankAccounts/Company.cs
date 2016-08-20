@@ -5,16 +5,14 @@
     public class Company: Customer
     {
         private string companyManager;
-
-        // Constructors
+        
 
         public Company(string name, long iDNumber,string companyManager)
             :base(name,iDNumber)
         {
             this.CompanyManager = companyManager;
         }
-
-        // Properties
+        
         public string CompanyManager
         {
             get { return this.companyManager; }
@@ -30,8 +28,6 @@
                 }
             }
         }
-
-        // Methods
 
         public override string ToString()
         {

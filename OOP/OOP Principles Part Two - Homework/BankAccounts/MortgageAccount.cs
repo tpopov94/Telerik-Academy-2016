@@ -4,18 +4,11 @@
 
     public class MortgageAccount : Account, IDepositable
     {
-        // Constructors
-
         public MortgageAccount(Customer customer, decimal bankBalance, decimal interestRate)
             : base(customer, bankBalance, interestRate)
         {
 
         }
-
-        // Properties
-
-        // Methods
-
         // Correct me if I am wrong but in mortgage accounts you have to return money to the bank
         // so when you are adding money to your bank balance the amount of the deposit is subtracted from the initial balance
 
@@ -25,6 +18,7 @@
             {
                 throw new ArgumentException("You cannot deposit a negative number !!");
             }
+
             if (this.BankBalance < amount)
             {  
                 Console.WriteLine("You have paid your mortgage !!");
@@ -52,6 +46,7 @@
             {
                 interestAmount = this.InterestRate/100 * (months - 12) + (this.InterestRate/100 * 12) / 2; 
             }
+
             return interestAmount;
         }
 

@@ -4,16 +4,11 @@
 
     public class LoanAccount : Account, IDepositable
     {
-
-        // Constructors
-
         public LoanAccount(Customer customer, decimal bankBalance, decimal interestRate)
             : base(customer, bankBalance, interestRate)
         {
 
         }
-
-        // Methods
 
         public override decimal InterestAmount(int months)
         {
@@ -27,6 +22,7 @@
             {
                 interestAmount = this.InterestRate/100 * (months - 2);
             }
+
             return interestAmount;
         }
 
@@ -38,6 +34,7 @@
             {
                 throw new ArgumentException("You cannot deposit a negative number !!");
             }
+
             if (this.BankBalance < amount)
             {
                 Console.WriteLine("You have paid your loan !!");

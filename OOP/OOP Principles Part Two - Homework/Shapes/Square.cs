@@ -1,6 +1,5 @@
 ﻿namespace Shapes
 {
-
     public class Square : Shape
     {
         public Square(double side)
@@ -8,8 +7,6 @@
         {
 
         }
-
-        //Methods
 
         public override double CalculateSurface()
         {

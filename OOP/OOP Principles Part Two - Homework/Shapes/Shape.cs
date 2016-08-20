@@ -7,15 +7,11 @@
         private double width;
         private double height;
 
-        // Constructors
-
         public Shape(double width, double height)
         {
             this.Width = width;
             this.Height = height;
         }
-
-        // Properties
 
         public double Width
         {
@@ -48,7 +44,6 @@
                 }
             }
         }
-        // Methods
 
         public abstract double CalculateSurface();
     }

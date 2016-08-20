@@ -7,15 +7,11 @@
         private string name;
         private long iDNumber;
 
-        // Constructors
-
         public Customer(string name, long iDNumber)
         {
             this.Name = name;
             this.IDNumber = iDNumber;
         }
-
-        //Properties
 
         public string Name
         {
@@ -48,8 +44,6 @@
                 }
             }
         }
-
-        // Methods
 
         public override string ToString()
         {

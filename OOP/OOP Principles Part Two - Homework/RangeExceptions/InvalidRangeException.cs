@@ -4,13 +4,9 @@
 
     public class InvalidRangeException<T> : ApplicationException
     {
-
         private T start;
         private T end;
-
-
-        // Constructors
-
+        
         public InvalidRangeException(string message, T start, T end, Exception inner)
             : base(message, inner)
         {
@@ -24,8 +20,6 @@
 
         }
 
-        // Properties
-
         public T Start
         {
             get { return this.start; }
@@ -37,7 +31,5 @@
             get { return this.end; }
             set { this.end = value; }
         }
-
-       
     }
 }
