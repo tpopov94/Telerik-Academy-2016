@@ -7,17 +7,13 @@
     {
         private List<Discipline> disciplinesList;
 
-        private List<string> commentList = new List<string>(); // For IComment
-
-        // Constructors
+        private List<string> commentList = new List<string>();
 
         public Teacher(string firstName, string lastName, List<Discipline> disciplinesList)
             :base(firstName,lastName)
         {
             this.DisciplineList = disciplinesList;
         }
-
-        // Properties
 
         public List<Discipline> DisciplineList
         {
@@ -34,8 +30,6 @@
                 }
             }
         }
-
-        //// Methods 
 
         public override string ToString()
         {

@@ -66,6 +66,7 @@
             result.AppendLine(string.Format("- {0} - {1}:", this.Brand, this.Name));
             result.AppendLine(string.Format("  * Price: ${0}", this.Price));
             result.AppendLine(string.Format("  * For gender: {0}", this.Gender));
+
             return result.ToString();
         }
 

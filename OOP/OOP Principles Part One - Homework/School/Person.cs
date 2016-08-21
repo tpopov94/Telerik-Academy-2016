@@ -7,15 +7,11 @@
         private string firstName;
         private string lastName;
 
-        // Constructors
-
         public Person(string firstName, string lastName)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
         }
-
-        // Properties
 
         public string FirstName
         {
@@ -48,6 +44,5 @@
                 }
             }
         }
-
     }
 }

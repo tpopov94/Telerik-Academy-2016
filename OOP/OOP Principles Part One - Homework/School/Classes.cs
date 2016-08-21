@@ -9,16 +9,12 @@
         private List<Teacher> teachersInClass;
         private string classID;
 
-        // Constructors
-
         public Classes(List<Teacher> teachersInClass, List<Student> pupilsInClass, string classID)
         {
             this.TeachersInClass = teachersInClass;
             this.PupilsInClass = pupilsInClass;
             this.ClassID = classID;
         }
-
-        // Properties
 
         public List<Teacher> TeachersInClass
         {
@@ -67,8 +63,5 @@
                 }
             }
         }
-
-        // Methods
-
     }
 }

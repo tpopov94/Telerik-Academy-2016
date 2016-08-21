@@ -1,8 +1,9 @@
 ﻿namespace Cosmetics.Products
 {
+    using System.Text;
+
     using Common;
     using Cosmetics.Contracts;
-    using System.Text;
 
     public class Shampoo : Product, IShampoo
     {

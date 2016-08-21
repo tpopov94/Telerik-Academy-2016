@@ -1,6 +1,7 @@
-﻿using Cosmetics.Engine;
-namespace Cosmetics
+﻿namespace Cosmetics
 {
+    using Cosmetics.Engine;
+
     public class CosmeticsProgram
     {
         public static void Main()

@@ -1,10 +1,11 @@
 ﻿namespace Cosmetics.Products
 {
-    using Cosmetics.Contracts;
-    using Cosmetics.Common;
     using System;
     using System.Collections.Generic;
     using System.Text;
+
+    using Cosmetics.Common;
+    using Cosmetics.Contracts;
 
     public class Toothpaste : Product, IToothpaste
     {
@@ -26,7 +27,10 @@
         public string Ingredients
         {
             get
-            { return this.ingredients; }
+            {
+                return this.ingredients;
+            }
+
             protected set
             {
                 if (string.IsNullOrEmpty(value))
@@ -37,8 +41,9 @@
                  {
                      throw new ArgumentException("Each ingredient must be between 4 and 12 symbols long!");
                  }*/
+
                 Validator.CheckIfStringLengthIsValid(value, MAX_INGREDIENT_LENGTH, MIN_INGREDIENT_LENGTH,
-                    string.Format("Each ingredient must be between {0} and {1} symbols long!", MIN_INGREDIENT_LENGTH, MAX_INGREDIENT_LENGTH));
+                            string.Format("Each ingredient must be between {0} and {1} symbols long!", MIN_INGREDIENT_LENGTH, MAX_INGREDIENT_LENGTH));
 
                 this.ingredients = value;
             }
@@ -46,10 +51,6 @@
 
         public IList<string> IngredientsList { get; set; }
 
-        protected void AddIgredients(string ingredients)
-        {
-            this.ingredientsList.Add(ingredients);
-        }
 
         public override string ToString()
         {
@@ -61,6 +62,11 @@
             result.AppendLine(string.Format("  * Ingredients: {0}", string.Join(", ", this.IngredientsList)));
 
             return result.ToString().Trim();
+        }
+
+        protected void AddIgredients(string ingredients)
+        {
+            this.ingredientsList.Add(ingredients);
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace School
+﻿namespace School
 {
+    using System;
+    using System.Collections.Generic;
+
     public class Discipline : IComment
     {
         private string disciplineName;
@@ -11,7 +11,6 @@ namespace School
         private DisciplinesList disciplines;
 
         private List<string> commentList = new List<string>(); // For IComment
-        // Constructors
 
         //public Discipline(string disciplineName, int numberOfLectures, int numberOfExercises) // Without enumeration
         //{
@@ -26,7 +25,6 @@ namespace School
             this.NumberOfLectures = numberOfLectures;
             this.NumberOfExercises = numberOfExercises;
         }
-        // Properties
 
         public string DisciplineName
         {
@@ -81,8 +79,6 @@ namespace School
             get { return this.disciplines; }
             private set {this.disciplines=value;}
         }
-
-        // Methods
 
         public override string ToString()
         {

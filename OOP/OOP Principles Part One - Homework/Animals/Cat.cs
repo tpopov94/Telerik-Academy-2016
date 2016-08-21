@@ -4,20 +4,14 @@
 
     public class Cat : Animal, ISound
     {
-        // Constructors
-
         public Cat(string name, int age, Gender gender, string breed)
             : base(name, age, gender)
         {
             this.Breed = breed;
         }
 
-        // Properties
-
         public string Breed { get; set; }
-
-        // Methods
-
+        
         public override string ToString()
         {
             return base.ToString() + " - Breed: " + this.Breed;

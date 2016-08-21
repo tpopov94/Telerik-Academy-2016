@@ -6,15 +6,13 @@
     {
         private string firstName;
         private string lastName;
-        // Constructors
 
         public Human(string firstName, string lastName)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
         }
-
-        // Properties
+        
         public string FirstName
         {
             get { return this.firstName; }
@@ -40,8 +38,6 @@
                 this.lastName = value;
             }
         }
-
-        // Methods
 
         public override string ToString()
         {

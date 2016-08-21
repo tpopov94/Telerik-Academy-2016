@@ -7,17 +7,13 @@
     {
         private long studentID;
 
-        private List<string> commentList = new List<string>(); // For IComment
-
-        //Constructors
+        private List<string> commentList = new List<string>();
 
         public Student(string firstName, string lastName, long studentID)
             : base(firstName, lastName)
         {
             this.StudentID = studentID;
         }
-
-        // Properties
 
         public long StudentID
         {
@@ -32,8 +28,6 @@
             }
         }
 
-        // Methods
-
         public override string ToString()
         {
             return string.Format("Student: {0} {1} ID: {2}", this.FirstName, this.LastName, this.studentID);
@@ -46,11 +40,13 @@
 
         public string ShowComments()
         {
-            var result =string.Empty;
+            var result = string.Empty;
+
             for (int i = 0; i < commentList.Count; i++)
             {
-                result +=commentList[i]  + "\n\r";
+                result += commentList[i] + "\n\r";
             }
+
             return result;
         }
     }

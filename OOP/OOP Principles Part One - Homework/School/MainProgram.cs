@@ -5,13 +5,12 @@
  * Your task is to identify the classes (in terms of OOP) and their attributes and operations, encapsulate their fields, 
  * define the class hierarchy and create a class diagram with Visual Studio.*/
 
-
 namespace School
 {
     using System;
     using System.Collections.Generic;
 
-    class MainProgram
+    public class MainProgram
     {
         static void Main()
         {

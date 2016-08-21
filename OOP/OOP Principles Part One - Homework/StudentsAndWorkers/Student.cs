@@ -5,16 +5,12 @@
     public class Student : Human
     {
         private int grade;
-
-        // Constructors
-
+        
         public Student(string firstName, string lastName, int grade)
             : base(firstName, lastName)
         {
             this.Grade = grade;
         }
-
-        // Properties
 
         public int Grade
         {

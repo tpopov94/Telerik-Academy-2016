@@ -1,8 +1,9 @@
 ﻿namespace Cosmetics.Products
 {
-    using Cosmetics.Contracts;
     using System.Collections.Generic;
     using System.Linq;
+
+    using Cosmetics.Contracts;
 
     public class ShoppingCart : IShoppingCart
     {
