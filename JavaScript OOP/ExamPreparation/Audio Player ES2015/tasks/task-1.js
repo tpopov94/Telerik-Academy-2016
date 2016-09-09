@@ -133,6 +133,7 @@ function solve() {
         constructor(name) {
             this._id = ++playerId;
             this.name = name;
+            this._playlists = [];
         }
 
         get id() {
@@ -151,7 +152,49 @@ function solve() {
         }
 
         addPlaylist(playlistToAdd) {
+            Validation.validateIfUndefined(playlistToAdd);
+            Validation.validateIfObject(playlistToAdd);
 
+            this._playlists.push(playlistToAdd);
+        }
+
+        getPlaylistById(id){
+            for (let item of this._playlists){
+                if(item.id === id){
+                    return item;
+                }
+            }
+
+            return null;
+        }
+
+        removePlaylist(id){
+            let i,
+                len = this._playlists.length,
+                found = false;
+
+            for (i =0; i < len; i+=1){
+                if(this._playlists[i].id === id){
+                    this._playlists.splice(i, 1);
+                    found = true;
+                    break;
+                }
+            }
+
+            if(found){
+                throw new Error("Id not found");
+            }
+        }
+
+        listPlaylists(page, size){
+            let maxSize = page * size,
+                sortedPlaylist = [];
+
+            return sortedPlaylist;
+        }
+
+        search(pattern){
+            //TODO
         }
     }
 
@@ -213,6 +256,12 @@ function solve() {
 
             this._playables.splice(index, 1);
             return this;
+        }
+
+        listPlayables(page, size) {
+            let sortedPlaylist = [];
+
+            return sortedPlaylist;
         }
     }
 
