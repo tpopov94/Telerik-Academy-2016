@@ -255,8 +255,8 @@ function solve() {
             pattern = pattern.toUpperCase();
 
             for (let item of this.items) {
-                let containsInName = item.name.contains(pattern),
-                    containsInDescription = item.description.contains(pattern);
+                let containsInName = item.name.includes(pattern),
+                    containsInDescription = item.description.includes(pattern);
 
                 if(containsInDescription || containsInName) {
                     filteredCatalog.push(item);
