@@ -1,0 +1,26 @@
+{
+  "name": "Self Manager",
+  "description": "Exam Prep",
+  "main": "index.js",
+  "authors": [
+    "Toshko Popov"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "sammy": "^0.7.6",
+    "navigo": "^3.0.0",
+    "handlebars": "^4.0.5",
+    "cryptojslib": "^3.1.2",
+    "toastr": "^2.1.3"
+  }
+}

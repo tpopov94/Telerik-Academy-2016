@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Self Manager</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bower_components/toastr/toastr.css">
+
+</head>
+<body>
+<div id="root" class="container">
+	<header>
+		<div class="row">
+		<h1 class="page-header col-md-9">Self Manager</h1>
+			<div class="col-md-3">
+				<a href="#/register">Register/Login</a>
+			</div>
+		</div>
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#/home">Home</a>
+				</li>
+				<li>
+					<a href="#/events">Events</a>
+				</li>
+				<li>
+					<a href="#/todos">Todo's</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="content">
+
+	</div>
+</div>
+<!-- Libs -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/sammy/lib/sammy.js"></script>
+<script src="bower_components/navigo/lib/navigo.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
+<script src="bower_components/cryptojslib/rollups/sha1.js"></script>
+<script src="bower_components/toastr/toastr.js"></script>
+<!-- App -->
+
+<!-- App: Controllers -->
+
+<script src="js/controllers/home-controller.js"></script>
+<script src="js/controllers/user-controller.js"></script>
+<script src="js/controllers/todos-controller.js"></script>
+
+<!-- App: Setup -->
+<script src="js/main.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/data.js"></script>
+
+</body>
+</html>

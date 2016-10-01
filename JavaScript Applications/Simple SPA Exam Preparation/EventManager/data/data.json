@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "username": "cuki",
+      "passHash": "40bb0ffdc4530ab30d6694a621439f96c89fcfd9",
+      "usernameLower": "cuki",
+      "authKey": "undefined@c+vYs)%AhYzBV^GVHrMnp+z%-%uMUz_)JPdGvYCv#=gWvpGrkV",
+      "id": "3e6cf679-91c5-43fd-bc7b-a3c33b4f72f9",
+      "todos": [
+        {
+          "text": "Pesho",
+          "state": "Not ready"
+        },
+        {
+          "id": 771376,
+          "text": "Hate Viktor",
+          "state": false,
+          "category": "Fun"
+        }
+      ]
+    }
+  ]
+}
