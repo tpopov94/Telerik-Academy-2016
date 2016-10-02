@@ -8,14 +8,59 @@
       "id": "3e6cf679-91c5-43fd-bc7b-a3c33b4f72f9",
       "todos": [
         {
-          "text": "Pesho",
-          "state": "Not ready"
-        },
-        {
           "id": 771376,
           "text": "Hate Viktor",
           "state": false,
           "category": "Fun"
+        },
+        {
+          "id": 371194,
+          "text": "Hate Printers",
+          "state": false,
+          "category": "Fun"
+        },
+        {
+          "id": 479218,
+          "text": "Batman",
+          "state": false,
+          "category": "Fun"
+        },
+        {
+          "id": 509573,
+          "text": "Windows 10 FTW",
+          "state": false,
+          "category": "Fun"
+        },
+        {
+          "id": 700435,
+          "text": "Hate TU",
+          "state": false,
+          "category": "Fun"
+        },
+        {
+          "id": 737495,
+          "text": "Something",
+          "state": false,
+          "category": "Fun"
+        },
+        {
+          "id": 924910,
+          "text": "Eat lunch",
+          "state": false,
+          "category": "Home"
+        }
+      ],
+      "events": [
+        {
+          "id": 65375,
+          "title": "Musaka",
+          "category": "Dinner",
+          "description": "Mmm",
+          "date": "2016-10-02T16:00:00.000Z",
+          "creatorId": "3e6cf679-91c5-43fd-bc7b-a3c33b4f72f9",
+          "users": [
+            "3e6cf679-91c5-43fd-bc7b-a3c33b4f72f9"
+          ]
         }
       ]
     }

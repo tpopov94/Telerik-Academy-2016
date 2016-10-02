@@ -1,9 +1,22 @@
-<h2>TODOs</h2>
-<a href="#/todos/add">Add new TODO</a>
-<ul>
+<h2><a href="#/todos">TODOs</a></h2><a href="#/todos/add">Add new TODO</a>
+{{#if this}}
 	{{#this}}
-		<li>
-			<strong>{{text}}</strong>
-		</li>
+		<h2><a href="#/todos?category={{category}}">{{category}}</a></h2>
+		<ul type="none">
+			{{#todos}}
+				<li class="checkbox" data-item= {{id}}>
+					<label class="label label-primary" style="font-size: 13px">
+						{{#if state}}
+							<input class="todo-state" type="checkbox" checked>
+						{{else}}
+							<input class="todo-state" type="checkbox">
+						{{/if}}
+						<strong>{{text}}</strong>
+					</label>
+				</li>
+			{{/todos}}
+		</ul>
 	{{/this}}
-</ul>
+{{else}}
+	<h3>No TODOs</h3>
+{{/if}}

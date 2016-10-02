@@ -5,13 +5,17 @@
 	<title>Self Manager</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="bower_components/toastr/toastr.css">
+	<!--<link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">-->
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/cupertino/jquery-ui.css">
+	<!--<link rel="stylesheet" href="bower_components/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.css">-->
+	<link rel="stylesheet" href="bower_components/jt.timepicker/jquery.timepicker.css">
 
 </head>
 <body>
 <div id="root" class="container">
 	<header>
 		<div class="row">
-		<h1 class="page-header col-md-9">Self Manager</h1>
+		<h1 class="page-header col-md-9 text-danger">Self Manager</h1>
 			<div class="col-md-3">
 				<a href="#/register">Register/Login</a>
 			</div>
@@ -42,6 +46,10 @@
 <script src="bower_components/handlebars/handlebars.js"></script>
 <script src="bower_components/cryptojslib/rollups/sha1.js"></script>
 <script src="bower_components/toastr/toastr.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="bower_components/lodash/dist/lodash.js"></script>
+<!--<script src="bower_components/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.js"></script>-->
+<script src="bower_components/jt.timepicker/jquery.timepicker.js"></script>
 <!-- App -->
 
 <!-- App: Controllers -->
@@ -49,6 +57,7 @@
 <script src="js/controllers/home-controller.js"></script>
 <script src="js/controllers/user-controller.js"></script>
 <script src="js/controllers/todos-controller.js"></script>
+<script src="js/controllers/event-controller.js"></script>
 
 <!-- App: Setup -->
 <script src="js/main.js"></script>

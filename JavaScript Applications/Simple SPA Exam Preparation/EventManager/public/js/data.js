@@ -92,7 +92,101 @@ var data = function () {
 
         return promise;
     }
-    
+
+
+    function todosUpdate(id, state) {
+        var promise = new Promise(function (resolve, reject) {
+            let url = `api/todos/${id}`;
+
+            $.ajax(url, {
+                method: "PUT",
+                data: JSON.stringify({state: state}),
+                contentType: "application/json",
+                headers: {
+                    "x-auth-key": localStorage.getItem(LOCAL_STORAGE_GET_KEY)
+                },
+                success: function (res) {
+                    resolve(res);
+                },
+                error: function (err) {
+                    reject(err);
+                }
+            });
+        });
+
+        return promise;
+    }
+
+    /*Categories*/
+
+    function categoriesGet() {
+        var promise = new Promise(function (resolve, reject) {
+            let url = "api/categories";
+
+            $.ajax(url, {
+                method: "GET",
+                contentType: "application/json",
+                headers: {
+                    "x-auth-key": localStorage.getItem(LOCAL_STORAGE_GET_KEY)
+                },
+                success: function (res) {
+                    resolve(res);
+                },
+                error: function (err) {
+                    reject(err);
+                }
+            });
+        });
+
+        return promise;
+    }
+
+    /* Events */
+    function eventsGet() {
+        var promise = new Promise(function (resolve, reject) {
+            let url = "api/events";
+
+            $.ajax(url, {
+                method: "GET",
+                contentType: "application/json",
+                headers: {
+                    "x-auth-key": localStorage.getItem(LOCAL_STORAGE_GET_KEY)
+                },
+                success: function (res) {
+                    resolve(res);
+                },
+                error: function (err) {
+                    reject(err);
+                }
+            });
+        });
+
+        return promise;
+    }
+
+    function eventsAdd(event) {
+        var promise = new Promise(function (resolve, reject) {
+            let url = "api/events";
+
+            $.ajax(url, {
+                method: "POST",
+                data: JSON.stringify(event),
+                contentType: "application/json",
+                headers: {
+                    "x-auth-key": localStorage.getItem(LOCAL_STORAGE_GET_KEY)
+                },
+                success: function (res) {
+                    resolve(res);
+                },
+                error: function (err) {
+                    reject(err);
+                }
+            });
+        });
+
+        return promise;
+    }
+
     return {
         users: {
             register: register,
@@ -100,7 +194,15 @@ var data = function () {
         },
         todos: {
             get: todosGet,
-            add: todosAdd
+            add: todosAdd,
+            update: todosUpdate
+        },
+        categories: {
+            get: categoriesGet
+        },
+        events: {
+            get: eventsGet,
+            add: eventsAdd
         }
     };
 }();

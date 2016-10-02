@@ -16,7 +16,8 @@
 
         this.get("#/todos/add", todosController.add);
 
-        //this.get("#/events", eventsController.all);
+        this.get("#/events", eventsController.all);
+        this.get("#/events/add", eventsController.add);
     });
 
 

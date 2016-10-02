@@ -1,0 +1,17 @@
+<h2><a href="#/events">Events</a></h2><a href="#/events/add">Add new event</a>
+{{#if this}}
+	{{#this}}
+		<h2><a href="#/events?category={{category}}">{{category}}</a></h2>
+		<ul type="none">
+			{{#events}}
+				<li class="list-group" data-item= {{id}}>
+					<label class="label label-primary" style="font-size: 13px">
+						{{title}}
+					</label>
+				</li>
+			{{/events}}
+		</ul>
+	{{/this}}
+{{else}}
+	<h3>No events</h3>
+{{/if}}
