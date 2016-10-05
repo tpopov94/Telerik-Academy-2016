@@ -2,6 +2,8 @@
 {
     public enum ComputerType
     {
-        PC, LAPTOP, SERVER
+        PC,
+        LAPTOP,
+        SERVER
     }
 }

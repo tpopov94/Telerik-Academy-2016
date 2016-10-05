@@ -4,22 +4,22 @@
 
     public class Cpu
     {
-        static readonly Random Random = new Random();
+        public static readonly Random Random = new Random();
 
         private readonly byte numberOfBits;
 
-        private readonly Rammstein ram;
+        private readonly Ram ram;
 
-        private readonly HardDriver videoCard;
+        private readonly HardDriver videoCard = new HardDriver();
 
-        internal Cpu(byte numberOfCores, byte numberOfBits, Rammstein ram, HardDriver videoCard)
+        internal Cpu(byte numberOfCores, byte numberOfBits, Ram ram, HardDriver videoCard)
         {
             this.numberOfBits = numberOfBits;
             this.ram = ram;
             this.NumberOfCores = numberOfCores;
         }
 
-        byte NumberOfCores { get; set; }
+        public byte NumberOfCores { get; set; }
 
         public void SquareNumber()
         {
@@ -34,9 +34,10 @@
             }
         }
 
-        void SquareNumber32()
+        public void SquareNumber32()
         {
             var data = this.ram.LoadValue();
+
             if (data < 0)
             {
                 this.videoCard.Draw("Number too low.");
@@ -58,7 +59,7 @@
             }
         }
 
-        void SquareNumber64()
+        public void SquareNumber64()
         {
             var data = this.ram.LoadValue();
 
@@ -83,7 +84,7 @@
             }
         }
 
-        internal void rand(int a, int b)
+        internal void Rand(int a, int b)
         {
             int randomNumber;
 

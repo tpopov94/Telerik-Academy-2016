@@ -1,6 +1,6 @@
 ﻿namespace Computers.UI
 {
-    interface IMotherboard
+    public interface IMotherboard
     {
         int LoadRamValue();
 

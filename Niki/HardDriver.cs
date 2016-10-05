@@ -1,24 +1,26 @@
-﻿
-using System;
-using System.Collections.Generic;
-namespace Computers.UI
+﻿namespace Computers.UI
 {
+    using System;
+    using System.Collections.Generic;
     using System.Linq;
 
     public class HardDriver
     {
+        private bool isInRaid;
 
-        bool isInRaid;
+        private int hardDrivesInRaid;
 
-        int hardDrivesInRaid;
+        private List<HardDriver> hds;
 
-        SortedDictionary<int, string> info;
+        private SortedDictionary<int, string> info;
 
-        internal HardDriver() { }
+        private int capacity;
 
-        public bool IsMonochrome { get; set; }
-        
-        List<HardDriver> hds;
+        private Dictionary<int, string> data;
+
+        internal HardDriver()
+        {
+        }
 
         internal HardDriver(int capacity, bool isInRaid, int hardDrivesInRaid)
         {
@@ -28,10 +30,6 @@ namespace Computers.UI
             this.data = new Dictionary<int, string>(capacity);
             this.hds = new List<HardDriver>();
         }
-
-        int capacity;
-
-        Dictionary<int, string> data;
 
         internal HardDriver(int capacity, bool isInRaid, int hardDrivesInRaid, List<HardDriver> hardDrives)
         {
@@ -44,7 +42,9 @@ namespace Computers.UI
             this.hds = hardDrives;
         }
 
-        int Capacity
+        public bool IsMonochrome { get; set; }
+
+       public int Capacity
         {
             get
             {
@@ -64,7 +64,7 @@ namespace Computers.UI
             }
         }
 
-        void SaveData(int addr, string newData)
+        public void SaveData(int addr, string newData)
         {
             if (isInRaid)
             {
@@ -79,7 +79,7 @@ namespace Computers.UI
             }
         }
 
-        string LoadData(int address)
+        public string LoadData(int address)
         {
             if (isInRaid)
             {
