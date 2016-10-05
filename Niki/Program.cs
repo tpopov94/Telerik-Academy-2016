@@ -2,12 +2,17 @@
 {
     using System;
     using System.Collections.Generic;
+    using ComputerTypes;
 
     public class Computers
     {
         private const int Eight = 8;
 
-        private static Computer pc, laptop, server;
+        private static PersonalComputer pc;
+
+        private static Laptop laptop;
+
+        private static Server server;
 
         public static void Main()
         {
@@ -17,28 +22,19 @@
             {
                 var ram = new Ram(Eight / 4);
                 var videoCard = new HardDriver() { IsMonochrome = false };
-                pc = new Computer(ComputerType.PC, new Cpu(Eight / 4, 32, ram, videoCard), ram, new[] { new HardDriver(500, false, 0) }, videoCard, null);
+
+                pc = new PersonalComputer(new Cpu(Eight / 4, 32, ram, videoCard), ram, new[] { new HardDriver(500, false, 0) }, videoCard);
 
                 var serverRam = new Ram(Eight * 4);
                 var serverVideo = new HardDriver();
 
-                server = new Computer(ComputerType.SERVER, new Cpu(Eight / 2, 32, serverRam, serverVideo),
-                    serverRam,
-                    new List<HardDriver> {
-                            new HardDriver(0, true, 2, new List<HardDriver> { new HardDriver(1000, false, 0), new HardDriver(1000, false, 0) })
-                        },
-                        serverVideo, null);
+                server = new Server(new Cpu(Eight / 2, 32, serverRam, serverVideo), serverRam, new List<HardDriver> { new HardDriver(0, true, 2, new List<HardDriver> { new HardDriver(1000, false, 0), new HardDriver(1000, false, 0) }) }, serverVideo);
                 {
-                    var card = new HardDriver()
-                    {
-                        IsMonochrome
-                        = false
-                    };
+                    var card = new HardDriver() { IsMonochrome = false };
 
                     var ram1 = new Ram(Eight / 2);
 
-                    laptop = new Computer(
-                        ComputerType.LAPTOP,
+                    laptop = new Laptop(
                         new Cpu(Eight / 4, 64, ram1, card),
                         ram1,
                         new[]
@@ -52,18 +48,24 @@
             }
             else if (manufacturer == "Dell")
             {
-                var ram = new Ram(Eight); var videoCard = new HardDriver() { IsMonochrome = false };
-                pc = new Computer(ComputerType.PC, new Cpu(Eight / 2, 64, ram, videoCard), ram, new[] { new HardDriver(1000, false, 0) }, videoCard, null);
+                var ram = new Ram(Eight);
+                var videoCard = new HardDriver()
+                {
+                    IsMonochrome = false
+                };
+
+                pc = new PersonalComputer(new Cpu(Eight / 2, 64, ram, videoCard), ram, new[] { new HardDriver(1000, false, 0) }, videoCard);
+
                 var ram1 = new Ram(Eight * Eight);
 
-                var card = new HardDriver(); server = new Computer(ComputerType.SERVER,
-                     new Cpu(Eight, 64, ram1, card),
-                     ram1,
-                     new List<HardDriver>
-                     {
-                            new HardDriver(0, true, 2, new List<HardDriver> { new HardDriver(2000, false, 0), new HardDriver(2000, false, 0) })
-                         }, card, null); var ram2 = new Ram(Eight); var videoCard1 = new HardDriver() { IsMonochrome = false };
-                laptop = new Computer(ComputerType.LAPTOP,
+                var card = new HardDriver();
+
+                server = new Server(new Cpu(Eight, 64, ram1, card), ram1, new List<HardDriver> { new HardDriver(0, true, 2, new List<HardDriver> { new HardDriver(2000, false, 0), new HardDriver(2000, false, 0) }) }, card);
+                var ram2 = new Ram(Eight);
+
+                var videoCard1 = new HardDriver() { IsMonochrome = false };
+
+                laptop = new Laptop(
                     new Cpu(Eight / 2, 32, ram2, videoCard1),
                     ram2,
                     new[] { new HardDriver(1000, false, 0) },

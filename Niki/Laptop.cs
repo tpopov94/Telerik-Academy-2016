@@ -1,6 +1,6 @@
 ﻿namespace Computers.UI
 {
-    public class Laptop
+    public class Laptop2
     {
         private static void Main()
         {
