@@ -1,13 +1,11 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using C = System.Console;
-
 namespace Computers.UI
 {
+    using System.Linq;
 
-    class HardDriver
+    public class HardDriver
     {
 
         bool isInRaid;
@@ -17,42 +15,35 @@ namespace Computers.UI
         SortedDictionary<int, string> info;
 
         internal HardDriver() { }
+
         public bool IsMonochrome { get; set; }
-
-
+        
         List<HardDriver> hds;
+
         internal HardDriver(int capacity, bool isInRaid, int hardDrivesInRaid)
         {
             this.isInRaid = isInRaid;
             this.hardDrivesInRaid = hardDrivesInRaid;
-
-
-
             this.capacity = capacity;
             this.data = new Dictionary<int, string>(capacity);
-
-
-
-
-
-
             this.hds = new List<HardDriver>();
         }
 
-
-
-
         int capacity;
+
         Dictionary<int, string> data;
+
         internal HardDriver(int capacity, bool isInRaid, int hardDrivesInRaid, List<HardDriver> hardDrives)
         {
             this.isInRaid = isInRaid;
             this.hardDrivesInRaid = hardDrivesInRaid;
             this.capacity = capacity;
 
-
-            this.data = (Dictionary<int, string>)new Dictionary<int, string>(capacity); this.hds = new List<HardDriver>(); this.hds = hardDrives;
+            this.data = (Dictionary<int, string>)new Dictionary<int, string>(capacity);
+            this.hds = new List<HardDriver>();
+            this.hds = hardDrives;
         }
+
         int Capacity
         {
             get
@@ -63,6 +54,7 @@ namespace Computers.UI
                     {
                         return 0;
                     }
+
                     return this.hds.First().Capacity;
                 }
                 else
@@ -71,10 +63,22 @@ namespace Computers.UI
                 }
             }
         }
+
         void SaveData(int addr, string newData)
         {
-            if (isInRaid) foreach (var hardDrive in this.hds) hardDrive.SaveData(addr, newData); else this.data[addr] = newData;
+            if (isInRaid)
+            {
+                foreach (var hardDrive in this.hds)
+                {
+                    hardDrive.SaveData(addr, newData);
+                }
+            }
+            else
+            {
+                this.data[addr] = newData;
+            }
         }
+
         string LoadData(int address)
         {
             if (isInRaid)
@@ -91,24 +95,21 @@ namespace Computers.UI
                 return this.data[address];
             }
         }
+
         public void Draw(string a)
         {
             if (this.IsMonochrome)
             {
-                C.ForegroundColor = ConsoleColor.Gray;
-                C.WriteLine(a);
-                C.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.WriteLine(a);
+                Console.ResetColor();
             }
-
             else
             {
-                C.ForegroundColor = ConsoleColor.Green;
-                C.WriteLine(a);
-                C.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(a);
+                Console.ResetColor();
             }
-
         }
-
     }
-
 }

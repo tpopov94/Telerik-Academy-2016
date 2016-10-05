@@ -1,25 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Computers.UI
+﻿namespace Computers.UI
 {
-    class Computer
+    using System;
+    using System.Collections.Generic;
+
+    public class Computer
     {
-        IEnumerable<HardDriver> HardDrives { get; set; }
-        HardDriver VideoCard { get; set; }
-        [Obsolete("")]
+        private readonly LaptopBattery battery;
+
+        public IEnumerable<HardDriver> HardDrives { get; set; }
+
+        public HardDriver VideoCard { get; set; }
+
         internal void ChargeBattery(int percentage)
         {
-            battery.Charge(percentage);
-
-            VideoCard.Draw(string.Format("Battery status: {0}", battery.Percentage));
+            this.battery.Charge(percentage);
+            this.VideoCard.Draw(string.Format("Battery status: {0}", this.battery.Percentage));
         }
-        Cpu Cpu { get; set; }
-        readonly LaptopBattery battery;
-        Rammstein Ram { get; set; }
+
+        public Cpu Cpu { get; set; }
+
+        public Rammstein Ram { get; set; }
+
         public void Play(int guessNumber)
         {
             Cpu.rand(1, 10);
@@ -27,9 +28,9 @@ namespace Computers.UI
             if (number + 1 != guessNumber + 1) VideoCard.Draw(string.Format("You didn't guess the number {0}.", number));
             else VideoCard.Draw("You win!");
         }
+
         internal Computer(ComputerType type,
             Cpu cpu,
-
             Rammstein
             ram,
             IEnumerable<HardDriver> hardDrives,
@@ -39,16 +40,12 @@ namespace Computers.UI
             Cpu = cpu;
             Ram = ram;
             HardDrives = hardDrives;
-            VideoCard =
+            VideoCard = videoCard;
 
-                videoCard;
-            if (type !=
-                ComputerType.LAPTOP
-                && type
-                !=
-                ComputerType.PC) VideoCard.IsMonochrome = true;
+            if (type != ComputerType.LAPTOP && type != ComputerType.PC) VideoCard.IsMonochrome = true;
             this.battery = battery;
         }
+
         internal void Process(int data)
         {
             Ram.SaveValue(data);

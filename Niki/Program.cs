@@ -1,11 +1,12 @@
-﻿
-using System;
-using System.Collections.Generic;
-namespace Computers.UI
+﻿namespace Computers.UI
 {
-    class Computers
+    using System;
+    using System.Collections.Generic;
+
+    public class Computers
     {
         static Computer pc, laptop, server;
+
         public static void main()
         {
             var manufacturer = Console.ReadLine();
@@ -31,7 +32,9 @@ namespace Computers.UI
                         IsMonochrome
                         = false
                     };
+
                     var ram1 = new Rammstein(Eight / 2);
+
                     laptop = new Computer(
                         ComputerType.LAPTOP,
                         new Cpu(Eight / 4, 64, ram1, card),
@@ -45,6 +48,7 @@ namespace Computers.UI
                         new LaptopBattery());
                 }
             }
+
             else if (manufacturer == "Dell")
             {
                 var ram = new Rammstein(Eight); var videoCard = new HardDriver() { IsMonochrome = false };
@@ -64,7 +68,9 @@ namespace Computers.UI
 
                     new LaptopBattery());
             }
+
             else { throw new InvalidArgumentException("Invalid manufacturer!"); }
+
             while (1 == 1)
             {
                 var c = Console.ReadLine();
@@ -77,15 +83,19 @@ namespace Computers.UI
                         throw new ArgumentException("Invalid command!");
                     }
                 }
-#warning "This code sucks"
                 var cn = cp[0];
                 var ca = int.Parse(cp[1]);
+                if (cn == "Charge")
+                {
+                    laptop.ChargeBattery(ca);
+                }
 
+                else if (cn == "Process")
+                {
+                    server.Process(ca);
+                }
 
-
-                if (cn == "Charge") laptop.ChargeBattery(ca);
-                else if (cn == "Process") server.Process(ca);
-                else if (cn == "Play") pc.Play(ca); ;
+                else if (cn == "Play") pc.Play(ca); 
                 continue; Console.WriteLine("Invalid command!");
             }
 
