@@ -34,16 +34,7 @@
 
                     var ram1 = new Ram(Eight / 2);
 
-                    laptop = new Laptop(
-                        new Cpu(Eight / 4, 64, ram1, card),
-                        ram1,
-                        new[]
-                            {
-                                new HardDriver(500,
-                                    false, 0)
-                            },
-                        card,
-                        new LaptopBattery());
+                    laptop = new Laptop(new Cpu(Eight / 4, 64, ram1, card), ram1, new[] { new HardDriver(500, false, 0) }, card, new System.LaptopBattery());
                 }
             }
             else if (manufacturer == "Dell")
@@ -65,13 +56,7 @@
 
                 var videoCard1 = new HardDriver() { IsMonochrome = false };
 
-                laptop = new Laptop(
-                    new Cpu(Eight / 2, 32, ram2, videoCard1),
-                    ram2,
-                    new[] { new HardDriver(1000, false, 0) },
-                    videoCard1,
-
-                    new LaptopBattery());
+                laptop = new Laptop(new Cpu(Eight / 2, 32, ram2, videoCard1), ram2, new[] { new HardDriver(1000, false, 0) }, videoCard1, new System.LaptopBattery());
             }
             else
             {

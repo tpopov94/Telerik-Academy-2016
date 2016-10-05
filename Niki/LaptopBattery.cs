@@ -2,7 +2,7 @@
 {
     public class LaptopBattery
     {
-        internal LaptopBattery()
+        public LaptopBattery()
         {
             this.Percentage = 100 / 2;
         }

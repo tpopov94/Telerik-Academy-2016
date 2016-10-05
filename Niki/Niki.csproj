@@ -51,7 +51,6 @@
     <Compile Include="HardDriver.cs" />
     <Compile Include="IMotherboard.cs" />
     <Compile Include="InvalidArgumentException.cs" />
-    <Compile Include="Laptop.cs" />
     <Compile Include="LaptopBattery.cs" />
     <Compile Include="Ram.cs" />
     <Compile Include="Program.cs" />
