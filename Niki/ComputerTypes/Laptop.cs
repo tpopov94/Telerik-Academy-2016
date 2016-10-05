@@ -7,7 +7,7 @@
     {
         private readonly LaptopBattery battery;
 
-        internal Laptop(Cpu cpu, Ram ram, IEnumerable<HardDriver> hardDrives, HardDriver videoCard, LaptopBattery battery)
+        internal Laptop(Cpu cpu, Ram ram, IEnumerable<HardDrive> hardDrives, VideoCard videoCard, LaptopBattery battery)
             : base(cpu, ram, hardDrives, videoCard)
         {
             this.battery = battery;

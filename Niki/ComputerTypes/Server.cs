@@ -4,7 +4,7 @@
 
     public class Server : Computer
     {
-        public Server(Cpu cpu, Ram ram, IEnumerable<HardDriver> hardDrives, HardDriver videoCard)
+        public Server(Cpu cpu, Ram ram, IEnumerable<HardDrive> hardDrives, VideoCard videoCard)
             : base(cpu, ram, hardDrives, videoCard)
         {
             this.VideoCard.IsMonochrome = true;

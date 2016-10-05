@@ -4,7 +4,7 @@
 
     public abstract class Computer
     {
-        internal Computer(Cpu cpu, Ram ram, IEnumerable<HardDriver> hardDrives, HardDriver videoCard)
+        internal Computer(Cpu cpu, Ram ram, IEnumerable<HardDrive> hardDrives, VideoCard videoCard)
         {
             this.Cpu = cpu;
             this.Ram = ram;
@@ -12,9 +12,9 @@
             this.VideoCard = videoCard;
         }
 
-        public IEnumerable<HardDriver> HardDrives { get; set; }
+        public IEnumerable<HardDrive> HardDrives { get; set; }
 
-        public HardDriver VideoCard { get; set; }
+        public VideoCard VideoCard { get; set; }
 
         public Cpu Cpu { get; set; }
 

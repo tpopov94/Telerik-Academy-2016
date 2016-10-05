@@ -1,5 +1,5 @@
 Design pattern: Simple Factory
-	* 
+	* Program, CreateComputers
 
 Design pattern: Strategy
 	* 
@@ -8,7 +8,7 @@ Design pattern: Template Method
 	* 
 
 Design pattern: Abstract factory
-	* 
+	* IComputeFactory
 
 Design pattern: Composite
 	* 

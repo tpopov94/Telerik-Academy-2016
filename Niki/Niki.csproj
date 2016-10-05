@@ -48,7 +48,7 @@
     <Compile Include="ComputerTypes\PersonalComputer.cs" />
     <Compile Include="ComputerTypes\Server.cs" />
     <Compile Include="Cpu.cs" />
-    <Compile Include="HardDriver.cs" />
+    <Compile Include="HardDrive.cs" />
     <Compile Include="IMotherboard.cs" />
     <Compile Include="InvalidArgumentException.cs" />
     <Compile Include="LaptopBattery.cs" />
@@ -58,6 +58,7 @@
     <Compile Include="Ram.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VideoCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

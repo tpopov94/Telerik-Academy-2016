@@ -10,9 +10,9 @@
 
         private readonly Ram ram;
 
-        private readonly HardDriver videoCard = new HardDriver();
+        private readonly VideoCard videoCard = new VideoCard();
 
-        internal Cpu(byte numberOfCores, byte numberOfBits, Ram ram, HardDriver videoCard)
+        internal Cpu(byte numberOfCores, byte numberOfBits, Ram ram, VideoCard videoCard)
         {
             this.numberOfBits = numberOfBits;
             this.ram = ram;

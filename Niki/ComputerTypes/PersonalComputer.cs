@@ -4,7 +4,7 @@
 
     public class PersonalComputer : Computer
     {
-        internal PersonalComputer(Cpu cpu, Ram ram, IEnumerable<HardDriver> hardDrives, HardDriver videoCard)
+        internal PersonalComputer(Cpu cpu, Ram ram, IEnumerable<HardDrive> hardDrives, VideoCard videoCard)
             : base(cpu, ram, hardDrives, videoCard)
         {
         }
