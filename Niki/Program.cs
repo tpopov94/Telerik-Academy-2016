@@ -103,7 +103,8 @@
                     pc.Play(ca);
                 }
 
-                continue; Console.WriteLine("Invalid command!");
+                continue;
+                Console.WriteLine("Invalid command!");
             }
 
             // TODO

@@ -48,7 +48,7 @@
         {
             get
             {
-                if (isInRaid)
+                if (this.isInRaid)
                 {
                     if (!this.hds.Any())
                     {
@@ -59,14 +59,14 @@
                 }
                 else
                 {
-                    return capacity;
+                    return this.capacity;
                 }
             }
         }
 
         public void SaveData(int addr, string newData)
         {
-            if (isInRaid)
+            if (this.isInRaid)
             {
                 foreach (var hardDrive in this.hds)
                 {
@@ -81,7 +81,7 @@
 
         public string LoadData(int address)
         {
-            if (isInRaid)
+            if (this.isInRaid)
             {
                 if (!this.hds.Any())
                 {
