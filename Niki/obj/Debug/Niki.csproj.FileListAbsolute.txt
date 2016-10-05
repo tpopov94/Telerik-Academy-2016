@@ -1,2 +1,7 @@
 C:\Users\Toto\Desktop\High-Quality-Code-master\High-Quality-Code-master\Exams\2014\Computers\Problem\Niki\bin\Debug\Computers.UI.Console.exe.config
 C:\Users\Toto\Desktop\High-Quality-Code-master\High-Quality-Code-master\Exams\2014\Computers\Problem\Niki\obj\Debug\Niki.csprojResolveAssemblyReference.cache
+C:\Users\Toto\Desktop\High-Quality-Code-master\High-Quality-Code-master\Exams\2014\Computers\Problem\Niki\bin\Debug\Computers.UI.Console.exe
+C:\Users\Toto\Desktop\High-Quality-Code-master\High-Quality-Code-master\Exams\2014\Computers\Problem\Niki\bin\Debug\Computers.UI.Console.pdb
+C:\Users\Toto\Desktop\High-Quality-Code-master\High-Quality-Code-master\Exams\2014\Computers\Problem\Niki\bin\Debug\System.Collections.Generic.dll
+C:\Users\Toto\Desktop\High-Quality-Code-master\High-Quality-Code-master\Exams\2014\Computers\Problem\Niki\obj\Debug\Computers.UI.Console.exe
+C:\Users\Toto\Desktop\High-Quality-Code-master\High-Quality-Code-master\Exams\2014\Computers\Problem\Niki\obj\Debug\Computers.UI.Console.pdb

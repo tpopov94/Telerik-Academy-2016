@@ -1,6 +1,5 @@
-﻿
-using Computers1;using Computers11;using System;
-using Computers8;namespace Computers4
+﻿using System;
+namespace Computers.UI
 {
 
     class Cpu
@@ -13,7 +12,8 @@ using Computers8;namespace Computers4
 
         static readonly Random Random = new Random();
 
-        internal Cpu(byte numberOfCores, byte numberOfBits, Rammstein ram, HardDriver videoCard) {
+        internal Cpu(byte numberOfCores, byte numberOfBits, Rammstein ram, HardDriver videoCard)
+        {
             this.numberOfBits = numberOfBits;
             this.ram = ram;
             this.NumberOfCores = numberOfCores;
@@ -80,15 +80,6 @@ using Computers8;namespace Computers4
             }
             while (!(randomNumber >= a && randomNumber <= b));
             this.ram.SaveValue(randomNumber);
-        }
-    }
-
-    class Laptop
-    {
-        private static void Main()
-        {
-            Computers computers = new Computers();
-            Computers.main();
         }
     }
 }
