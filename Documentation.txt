@@ -21,8 +21,8 @@ Found bottlenecks:
 	* 
 
 Found bugs:
-	* When invalid command is passed there is no invalid command string is outputed
-	* 
+	* When invalid command is passed there is no invalid command string is outputed - fixed
+	* Proces command not working - fixed
 	* 
 
 Single responsibility principle
