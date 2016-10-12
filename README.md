@@ -15,3 +15,5 @@
 |   August  |JavaScript OOP|  [JS OOP](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/JavaScript%20OOP)    |
 |   September  |High Quality Code Part II  |  [HQC Part II](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/Hiqh%20Quality%20Code/High%20Quality%20Code%20Part%20II)    |
 |   September  |JavaScript Applications |  [JS APPS](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/JavaScript%20Applications)|
+|   October  |Databases |  [DB](https://github.com/tpopov94/Telerik-Academy-2016/tree/master/Databases)|
+|   October  |High Quality Code Design Patterns |  [HQC DP]()|
