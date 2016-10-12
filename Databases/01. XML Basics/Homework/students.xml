@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+
+<students xmlns:students="urn:students">
+  <student>
+    <name>
+      Pesho Stamatov
+    </name>
+    <sex>
+      Male
+    </sex>
+    <birth-date>
+      1994-05-27
+    </birth-date>
+    <phone>
+      +35989222222
+    </phone>
+    <email>
+      mymail@mail.bg
+    </email>
+    <course>
+      Software Academy
+    </course>
+    <specialty>
+      C#
+    </specialty>
+    <faculty-number>
+      4031253
+    </faculty-number>
+    <exams>
+      <exam-name>
+        OOP
+      </exam-name>
+      <tutor>
+        Doncho Minkov
+      </tutor>
+      <score>
+        400
+      </score>
+    </exams>
+    <enrollment>
+      <enrollment-date>
+        1990-12-12
+      </enrollment-date>
+      <exam-score>
+        3
+      </exam-score>
+    </enrollment>
+    <teacher-endorsements>
+      <teacher-name>
+        God
+      </teacher-name>
+    </teacher-endorsements>
+  </student>
+
+  <student>
+    <name>
+      Stamat Peshov
+    </name>
+    <sex>
+      Male
+    </sex>
+    <birth-date>
+      1948-10-13
+    </birth-date>
+    <phone>
+      +359891111111
+    </phone>
+    <email>
+      mymail@mail.bg
+    </email>
+    <course>
+      Software Academy
+    </course>
+    <specialty>
+      JS
+    </specialty>
+    <faculty-number>
+      4031243
+    </faculty-number>
+    <exams>
+      <exam-name>
+        UI &amp; DOM
+      </exam-name>
+      <tutor>
+        Doncho Minkov
+      </tutor>
+      <score>
+        200
+      </score>
+    </exams>
+    <enrollment>
+      <enrollment-date>
+        1992-12-12
+      </enrollment-date>
+      <exam-score>
+        4
+      </exam-score>
+    </enrollment>
+  </student>
+</students>
