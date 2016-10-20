@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalogue xmlns="catalogue.xml">
+  <album>
+    <name>Volkerball</name>
+    <artist>Rammstein</artist>
+    <year>2008</year>
+    <producer>Hans</producer>
+    <price>3</price>
+    <songs>
+      <song>
+        <title>Ich will</title>
+        <duration>3:24</duration>
+      </song>
+      <song>
+        <title>Sonne</title>
+        <duration>2:24</duration>
+      </song>
+    </songs>
+  </album>
+ <album>
+    <name>Dai si surceto</name>
+    <artist>Hisarskiq pop</artist>
+    <year>1944</year>
+    <producer>Popa</producer>
+    <price>33</price>
+    <songs>
+      <song>
+        <title>Dai si surceto</title>
+        <duration>3:24</duration>
+      </song>
+    </songs>
+  </album>
+ <album>
+    <name>The big sleep</name>
+    <artist>Vibraspehere</artist>
+    <year>2005</year>
+    <producer>Some swedish guys</producer>
+    <price>13</price>
+    <songs>
+      <song>
+        <title>The big sleep</title>
+        <duration>3:24</duration>
+      </song>
+      <song>
+        <title>Heading North</title>
+        <duration>5:24</duration>
+      </song>
+    <song>
+        <title>Manzanilla</title>
+        <duration>8:24</duration>
+      </song>
+    </songs>
+  </album>
+<album>
+    <name>Mein Teil</name>
+    <artist>Rammstein</artist>
+    <year>2005</year>
+    <producer>Klaus Maine</producer>
+    <price>23</price>
+    <songs>
+      <song>
+        <title>Du hast</title>
+        <duration>3:24</duration>
+      </song>
+      <song>
+        <title>Du spas</title>
+        <duration>5:24</duration>
+      </song>
+    <song>
+        <title>Du stamat</title>
+        <duration>8:24</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>
