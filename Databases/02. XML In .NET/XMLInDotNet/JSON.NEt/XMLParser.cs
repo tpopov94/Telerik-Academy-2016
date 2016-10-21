@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -12,6 +14,7 @@ namespace JSON.NET
     {
         private const int MaxAlbumPrice = 20;
         private const string path = "../../catalogue.xml";
+        private const string phonebookPath = "../../phonebook.txt";
 
         public static void Main(string[] args)
         {
@@ -26,16 +29,20 @@ namespace JSON.NET
             PrintArtistFromCatalogueXPath(doc);
             Console.WriteLine(new string('-', 60));
 
-            // TaskFour
+            // Task Four
             RemoveExpensiveAlbums(doc);
             Console.WriteLine(new string('-', 60));
 
-            // TaskFive
+            // Task Five
             ExtractSongTitlesXReader();
             Console.WriteLine(new string('-', 60));
 
-            // TaskSix
+            // Task Six
             ExtractSongTitlesLinq();
+            Console.WriteLine(new string('-', 60));
+
+            // Task Seven
+            CreateXmlPhonebookFromTextFile();
             Console.WriteLine(new string('-', 60));
         }
 
@@ -140,16 +147,80 @@ namespace JSON.NET
         private static void ExtractSongTitlesLinq()
         {
             int id = 1;
-            var doc = XDocument.Load(path);
+            XDocument doc = new XDocument();
+            doc = XDocument.Load(path);
 
             Console.WriteLine("Songs in the albums library with LINQ:");
 
-            var songsAlbum = from songs in doc.Descendants("title") select songs.Element("title").Value;
+            var songsAlbum = from song in doc.Descendants("song")
+                             select song.Element("title").Value;
 
             foreach (var song in songsAlbum)
             {
                 Console.WriteLine($"{id++}. {song}");
             }
+        }
+
+        private static void CreateXmlPhonebookFromTextFile()
+        {
+            StreamReader reader = new StreamReader(phonebookPath);
+           
+            var xml = new XDocument();
+            var root = new XElement("phonebook");
+
+            var line = reader.ReadLine();
+
+            while (line != null)
+            {
+                var person = new XElement("person");
+                person.Add(new XElement("name", line));
+                line = reader.ReadLine();
+
+                person.Add(new XElement("address", line));
+                line = reader.ReadLine();
+
+                person.Add(new XElement("phone", line));
+                line = reader.ReadLine();
+
+                root.Add(person);
+            }
+
+            xml.Add(root);
+
+            Console.WriteLine(xml);
+
+            xml.Save("../../phonebook.xml");
+
+            // Using XmlTextWriter works but writes everything on one line
+            /* 
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            settings.IndentChars = "\t";
+
+            var writer = new XmlTextWriter("../../phonebook2.xml", Encoding.UTF8);
+
+            writer.WriteStartDocument();
+            writer.WriteStartElement("phonebook");
+
+            using (var reader = new StreamReader(phonebookPath))
+            {
+                while (!reader.EndOfStream)
+                {
+                    writer.WriteStartElement("person");
+                    writer.WriteElementString("name", reader.ReadLine());
+                    
+                    writer.WriteElementString("address", reader.ReadLine());
+                    
+                    writer.WriteElementString("phone", reader.ReadLine());
+                }
+            }
+
+            writer.WriteEndElement();
+            writer.WriteEndDocument();
+            writer.Close();
+            writer.Dispose();
+            */
+
         }
     }
 }

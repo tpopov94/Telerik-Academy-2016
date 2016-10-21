@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<catalogue xmlns="catalogue.xml">
+<catalogue>
   <album>
     <name>Volkerball</name>
     <artist>Rammstein</artist>
@@ -17,7 +17,7 @@
       </song>
     </songs>
   </album>
- <album>
+  <album>
     <name>Dai si surceto</name>
     <artist>Hisarskiq pop</artist>
     <year>1944</year>
@@ -30,7 +30,7 @@
       </song>
     </songs>
   </album>
- <album>
+  <album>
     <name>The big sleep</name>
     <artist>Vibraspehere</artist>
     <year>2005</year>
@@ -45,13 +45,13 @@
         <title>Heading North</title>
         <duration>5:24</duration>
       </song>
-    <song>
+      <song>
         <title>Manzanilla</title>
         <duration>8:24</duration>
       </song>
     </songs>
   </album>
-<album>
+  <album>
     <name>Mein Teil</name>
     <artist>Rammstein</artist>
     <year>2005</year>
@@ -66,9 +66,30 @@
         <title>Du spas</title>
         <duration>5:24</duration>
       </song>
-    <song>
+      <song>
         <title>Du stamat</title>
         <duration>8:24</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Jazzmatazz, Vol. 2: The New Reality</name>
+    <artist>Guru</artist>
+    <year>1995</year>
+    <producer>Guru</producer>
+    <price>49.99</price>
+    <songs>
+      <song>
+        <title>Looking Through Darkness</title>
+        <duration>4:48</duration>
+      </song>
+      <song>
+        <title>Lost Souls</title>
+        <duration>54:12</duration>
+      </song>
+      <song>
+        <title>Respect The Architect</title>
+        <duration>4:51</duration>
       </song>
     </songs>
   </album>

@@ -10,7 +10,7 @@
               <xs:element name="artist" type="xs:string" />
               <xs:element name="year" type="xs:unsignedShort" />
               <xs:element name="producer" type="xs:string" />
-              <xs:element name="price" type="xs:unsignedByte" />
+              <xs:element name="price" type="xs:decimal" />
               <xs:element name="songs">
                 <xs:complexType>
                   <xs:sequence>
