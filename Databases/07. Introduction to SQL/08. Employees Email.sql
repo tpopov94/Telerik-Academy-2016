@@ -1,1 +1,1 @@
-SELECT FirstName + '' + LastName + '@telerik.com' AS [Full Email Address] FROM Employees
+SELECT FirstName + '.' + LastName + '@telerik.com' AS [Full Email Address] FROM Employees
