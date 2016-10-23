@@ -1,0 +1,1 @@
+SELECT * from Employees WHERE ManagerID IS NULL
