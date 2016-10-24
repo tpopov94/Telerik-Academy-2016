@@ -11,8 +11,7 @@
 
 #What is DML?
 
-	DML is short name of 
-Data Manipulation Language which deals with data manipulation, and includes most common SQL statements such SELECT, INSERT, UPDATE, DELETE etc, 
+	DML is short name of Data Manipulation Language which deals with data manipulation, and includes most common SQL statements such SELECT, INSERT, UPDATE, DELETE etc, 
 
 #What is DDL?
 
