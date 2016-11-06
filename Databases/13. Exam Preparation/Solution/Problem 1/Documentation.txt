@@ -1,0 +1,7 @@
+Connection string for "Company" database: metadata=res://*/CompanyEntities.csdl|res://*/CompanyEntities.ssdl|res://*/CompanyEntities.msl;provider=System.Data.SqlClient;provider connection string="data source=.;initial catalog=Company;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"
+Connection string for "Cars" database: (location)
+Relationships for "Company" database: 
+		Employees : Employees - one-to-many
+		Departments : Employees - one-to-many
+Relationships for "Cars" database: (first-table : second-table - type of relationship)
+Query files: (file location in solution)

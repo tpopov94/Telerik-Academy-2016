@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanySampleDataImporter.Data", "CompanySampleDataImporter.Data\CompanySampleDataImporter.Data.csproj", "{91787BA9-3DB1-4107-9314-492BB4976732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanySampleDataImporter.Importer", "CompanySampleDataImporter.Importer\CompanySampleDataImporter.Importer.csproj", "{AB9B5423-E3AB-4ADC-BECB-55A639E8E71F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91787BA9-3DB1-4107-9314-492BB4976732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91787BA9-3DB1-4107-9314-492BB4976732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91787BA9-3DB1-4107-9314-492BB4976732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91787BA9-3DB1-4107-9314-492BB4976732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB9B5423-E3AB-4ADC-BECB-55A639E8E71F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9B5423-E3AB-4ADC-BECB-55A639E8E71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9B5423-E3AB-4ADC-BECB-55A639E8E71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9B5423-E3AB-4ADC-BECB-55A639E8E71F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
